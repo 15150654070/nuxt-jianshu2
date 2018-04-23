@@ -57,13 +57,13 @@
                 <!--导航部分-->
                 <div class="container">
                        
-                        <button class="navbar-toggle" @click="navShow==true?navShow=false:navShow=true">
+                       
+                <div class="row">
+                     <button class="navbar-toggle" @click="navShow==true?navShow=false:navShow=true">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                          </button>
-
-                        
  <transition enter-active-class="animated fadeInDown" leave-active-class="animated fadeOutUp">
                         <ul class="nav-list" v-show="navShow">
                             <li>
@@ -120,6 +120,9 @@
                             </li>
                         </ul>
                     </transition>
+                </div>
+                        
+
                 </div>
             </div>
         </nav>
