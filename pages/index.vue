@@ -150,11 +150,8 @@
                                     </div>
                                 </div>
                             </li>
-                             <li class="have-img">
-                                <nuxt-link to="/p/123" class="wrap-img">
-                                    <img src="~/assets/img/note.jpg">
-                                </nuxt-link>
-                                <div class="content">
+                             <li>
+                                 <div class="content">
                                     <div class="author">
                                         <nuxt-link to="/p/123" class="avatar">
                                             <img src="~/assets/img/default-avatar.jpg">
@@ -166,7 +163,8 @@
                                             </span>
                                         </div>
                                     </div>
-                                    <nuxt-link class="title" to="/p/123">佛系程序员的月薪五万指南</nuxt-link>
+                                    <nuxt-link class="title" to="/p/123">佛系程序员的月薪五万指南
+                                    </nuxt-link>
                                     <div class="abstruct">
                                         摘要：大师：很简单，我这里有一份佛系月薪 5 万指南，我看你骨骼清奇、脑门光亮，一看就是将要大富大贵之人，这份指南可以助你快速实现小目标！ 程序员问大师…… 青年：大师，你看...
                                     </div>
@@ -189,11 +187,117 @@
                             </li>
 
                       </ul>
-                      <a href="#" class="load-more">阅读更多</a>
+                      
                  </div>
+                 <a href="#" class="load-more">阅读更多</a>
                </div>
                <div class="col-xs-offset-1 col-xs-7 aside">
-                   侧边栏
+                   <div class="row">
+                       <!-- 广告 -->
+                       <div class="board">
+                       <nuxt-link to="/">
+                            <img src="~/assets/img/ad1.png">
+                       </nuxt-link>
+                          <nuxt-link to="/">
+                            <img src="~/assets/img/ad2.png">
+                       </nuxt-link>
+                          <nuxt-link to="/">
+                            <img src="~/assets/img/ad3.png">
+                       </nuxt-link>
+                          <nuxt-link to="/">
+                            <img src="~/assets/img/ad4.png">
+                       </nuxt-link>
+                   </div>
+                   <!-- 推荐作者 -->
+                   <div class="recommended-author">
+                     <div class="title">
+                        <span>推荐作者</span>
+                        <nuxt-link to="/" class="page-change">
+                        <i class="fa fa-refresh"> </i>
+                        换一批
+                        </nuxt-link>
+                     </div>
+                   <ul class="recommended-list">
+                       <li>
+                           <nuxt-link class="avatar" to="/u/123">
+                             <img src="~/assets/img/default-avatar.jpg">
+                           </nuxt-link>
+                           <a href="#" class="follow">
+                               <i class="fa fa-plus"></i>
+                               关注
+                           </a>
+                           <nuxt-link class="name" to="/u/123">
+                            简书用户
+                           </nuxt-link>
+                           <p>写了1958k字·1.9k喜欢</p>
+                       </li>
+                        <li>
+                                    <nuxt-link class="avatar" to="/u/123">
+                                        <img src="~/assets/img/default-avatar.jpg">
+                                    </nuxt-link>
+                                    <a href="#" class="follow">
+                                        <i class="fa fa-plus"></i>
+                                        关注
+                                    </a>
+                                    <nuxt-link to="/u/123" class="name">
+                                        简书用户
+                                    </nuxt-link>
+                                    <p>
+                                        写了1958k字·1.9k喜欢
+                                    </p>
+                                </li>
+                                <li>
+                                    <nuxt-link class="avatar" to="/u/123">
+                                        <img src="~/assets/img/default-avatar.jpg">
+                                    </nuxt-link>
+                                    <a href="#" class="follow">
+                                        <i class="fa fa-plus"></i>
+                                        关注
+                                    </a>
+                                    <nuxt-link to="/u/123" class="name">
+                                        简书用户
+                                    </nuxt-link>
+                                    <p>
+                                        写了1958k字·1.9k喜欢
+                                    </p>
+                                </li>
+                                <li>
+                                    <nuxt-link class="avatar" to="/u/123">
+                                        <img src="~/assets/img/default-avatar.jpg">
+                                    </nuxt-link>
+                                    <a href="#" class="follow">
+                                        <i class="fa fa-plus"></i>
+                                        关注
+                                    </a>
+                                    <nuxt-link to="/u/123" class="name">
+                                        简书用户
+                                    </nuxt-link>
+                                    <p>
+                                        写了1958k字·1.9k喜欢
+                                    </p>
+                                </li>
+                                <li>
+                                    <nuxt-link class="avatar" to="/u/123">
+                                        <img src="~/assets/img/default-avatar.jpg">
+                                    </nuxt-link>
+                                    <a href="#" class="follow">
+                                        <i class="fa fa-plus"></i>
+                                        关注
+                                    </a>
+                                    <nuxt-link to="/u/123" class="name">
+                                        简书用户
+                                    </nuxt-link>
+                                    <p>
+                                        写了1958k字·1.9k喜欢
+                                    </p>
+                                </li>
+                    </ul>
+                    <nuxt-link to="/" class="find-more">
+                      查看更多
+                      <i class="fa fa-angle-right"></i>
+                    </nuxt-link>
+                   </div>
+                   </div>
                </div>
            </div>
         </div>
