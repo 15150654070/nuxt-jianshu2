@@ -213,8 +213,8 @@
                      <div class="title">
                         <span>推荐作者</span>
                         <nuxt-link to="/" class="page-change">
-                        <i class="fa fa-refresh"> </i>
-                        换一批
+                        <i class="fa fa-refresh rotate" > </i>
+                         换一批
                         </nuxt-link>
                      </div>
                    <ul class="recommended-list">
@@ -222,10 +222,11 @@
                            <nuxt-link class="avatar" to="/u/123">
                              <img src="~/assets/img/default-avatar.jpg">
                            </nuxt-link>
-                           <a href="#" class="follow">
+                           <a href="#" :class="{'p1' : true}" >
                                <i class="fa fa-plus"></i>
                                关注
                            </a>
+                           
                            <nuxt-link class="name" to="/u/123">
                             简书用户
                            </nuxt-link>
@@ -235,7 +236,26 @@
                                     <nuxt-link class="avatar" to="/u/123">
                                         <img src="~/assets/img/default-avatar.jpg">
                                     </nuxt-link>
-                                    <a href="#" class="follow">
+                                    <a href="#" :class="{'p1' : isA, 'p2': isB}" @click="'p1'?'p2':'p1'">
+                                        <i class="fa fa-plus"></i>
+                                        关注
+                                    </a>
+                                    <!-- <a href="#" :class="{'p2' : false}">
+                                        <i class="fa fa-plus"></i>
+                                        已关注
+                                    </a> -->
+                                    <nuxt-link to="/u/123" class="name">
+                                        简书用户
+                                    </nuxt-link>
+                                    <p>
+                                        写了1958k字·1.9k喜欢
+                                    </p>
+                                </li>
+                                <li>
+                                    <nuxt-link class="avatar" to="/u/123">
+                                        <img src="~/assets/img/default-avatar.jpg">
+                                    </nuxt-link>
+                                    <a href="#" :class="{'p1' : true}">
                                         <i class="fa fa-plus"></i>
                                         关注
                                     </a>
@@ -250,7 +270,7 @@
                                     <nuxt-link class="avatar" to="/u/123">
                                         <img src="~/assets/img/default-avatar.jpg">
                                     </nuxt-link>
-                                    <a href="#" class="follow">
+                                    <a href="#" :class="{'p1' : true}">
                                         <i class="fa fa-plus"></i>
                                         关注
                                     </a>
@@ -265,25 +285,14 @@
                                     <nuxt-link class="avatar" to="/u/123">
                                         <img src="~/assets/img/default-avatar.jpg">
                                     </nuxt-link>
-                                    <a href="#" class="follow">
+                                    <a href="#" :class="{'p1' : true}" >
                                         <i class="fa fa-plus"></i>
                                         关注
                                     </a>
-                                    <nuxt-link to="/u/123" class="name">
-                                        简书用户
-                                    </nuxt-link>
-                                    <p>
-                                        写了1958k字·1.9k喜欢
-                                    </p>
-                                </li>
-                                <li>
-                                    <nuxt-link class="avatar" to="/u/123">
-                                        <img src="~/assets/img/default-avatar.jpg">
-                                    </nuxt-link>
-                                    <a href="#" class="follow">
-                                        <i class="fa fa-plus"></i>
-                                        关注
-                                    </a>
+                                    <!-- <a href="#" :class="{'p2' : false}">
+                                         <i class="fa fa-plus"></i>
+                                        已关注
+                                    </a> -->
                                     <nuxt-link to="/u/123" class="name">
                                         简书用户
                                     </nuxt-link>
@@ -322,9 +331,20 @@
         },
         data (){
             return{
-                name:'首页'
+                name:'首页',
+                isA:true,
+                isB:false
             }
-        }
+        },
+        // methods:{
+        //     chan:function(){
+        //         console.log('点击关注');
+        //         this.isA = !this.isA;
+        //         this.isB = !this.isB;
+             
+              
+        //     }
+        // }
     }
 </script>
 
