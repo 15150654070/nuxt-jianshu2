@@ -88,12 +88,15 @@
                     <div class="share">
                         <a href="#" class="share-btn">
                             <i class="fa fa-weixin weixin"></i>
+                            <li>分享到微信</li>
                         </a>
                         <a href="#" class="share-btn">
                             <i class="fa fa-weibo weibo"></i>
+                            <i>分享到微博</i>
                         </a>
                         <a href="#" class="share-btn">
                             <i class="fa fa-qq qq"></i>
+                            <i>分享到qq</i>
                         </a>
                         <a href="#" class="share-btn more-share">
                             更多分享
