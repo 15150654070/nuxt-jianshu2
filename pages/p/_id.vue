@@ -63,7 +63,7 @@
                         <div class="avatar">
                             <img src="~/assets/img/default-avatar.jpg">
                         </div>
-                        <a href="#" class="btn-follow">
+                        <a href="javascript:void(0)" class="btn-follow">
                             <i class="fa fa-plus"></i>
                             <span>关注</span>
                         </a>
@@ -82,25 +82,65 @@
                             <a href="javascript:void(0)" class="">喜欢</a>
                         </div>
                         <div class="like-num">
-                            <a href="#">1971</a>
+                            <a href="javascript:void(0)">1971</a>
                         </div>
                     </div>
                     <div class="share">
-                        <a href="#" class="share-btn">
+                        <a href="javascript:void(0)" class="share-btn" v-tooltip="'分享到微信'">
                             <i class="fa fa-weixin weixin"></i>
-                            <li>分享到微信</li>
+                           
                         </a>
-                        <a href="#" class="share-btn">
+                        <a href="javascript:void(0)" class="share-btn"  v-tooltip="'分享到微博'">
                             <i class="fa fa-weibo weibo"></i>
-                            <i>分享到微博</i>
+                            
                         </a>
-                        <a href="#" class="share-btn">
+                        <a href="javascript:void(0)" class="share-btn"  v-tooltip="'分享到qq'">
                             <i class="fa fa-qq qq"></i>
-                            <i>分享到qq</i>
+                            
                         </a>
-                        <a href="#" class="share-btn more-share">
-                            更多分享
-                        </a>
+   
+                        
+<v-popover class="more-share share-btn">
+                          <a href="javascript:void(0)" class="more-share tooltip-target">
+                          更多分享
+                      </a>
+                      <template slot="popover">
+                          <div>
+                            <ul class="popoverul">
+                                <li>
+                                    <i class="fa fa-star"></i>
+                                    <span> 分享到QQ空间</span>
+                                   
+                                </li>
+                                <li>
+                                    <i class="fa fa-twitter"></i>
+                                    <span>分享到Twitter</span>
+                                    
+                                </li>
+                                <li>
+                                    <i class="fa fa-facebook-official"></i>
+                                    <span> 分享到Facebook</span>
+                                   
+                                </li>
+                                <li>
+                                    <i class="fa fa-google-plus"></i>
+                                    <span> 分享到Google+</span>
+                                   
+                               </li>
+                                <li>
+                                    <i>豆</i>
+                                    <span> 分享到豆瓣</span>
+                               </li>
+                                 
+                            </ul>
+                            </div>
+                      </template>
+                      </v-popover>
+
+
+
+                        
+
                     </div>
                  </div>
     
@@ -112,28 +152,30 @@
     </div>
 </template>
 <script>
-import myHeader from '~/components/myHeader'
-import myComment from '~/components/myComment'
-    export default {
-        
-        head:{
-           title:'简书文章详情页面-创作你的创作',
-           meta:[
-               {charset:'utf-8'},
-               {name:'keywords',content:'文章详情页面'},
-               {name:'description',content:'文章页面'}
-           ]
-        },
-        data () {
-            return {
-              
-              name:'page',
-              'islike':false
-            }
-        },
-        components:{
-        myHeader,
-        myComment
-        }
-    }
+import myHeader from "~/components/myHeader";
+import myComment from "~/components/myComment";
+import Vue from "vue";
+import VTooltip from "v-tooltip";
+
+Vue.use(VTooltip);
+export default {
+  head: {
+    title: "简书文章详情页面-创作你的创作",
+    meta: [
+      { charset: "utf-8" },
+      { name: "keywords", content: "文章详情页面" },
+      { name: "description", content: "文章页面" }
+    ]
+  },
+  data() {
+    return {
+      name: "page",
+      islike: false
+    };
+  },
+  components: {
+    myHeader,
+    myComment
+  }
+};
 </script>

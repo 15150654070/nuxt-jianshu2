@@ -82,6 +82,7 @@
                          </a>
                     </div>
                     <my-form></my-form> 
+                    
                 </div>
             </div>
         </div>
@@ -89,10 +90,12 @@
 </template>
 <script>
     import myForm from '~/components/myForm'
+    
     export default {
         name:'myComment',
         components:{
-            myForm
+            myForm,
+           
         },
         data () {
             return {

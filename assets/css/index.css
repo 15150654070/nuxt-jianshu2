@@ -482,3 +482,48 @@ i.qq {
             background-position:right;
     }
  }
+ .tooltip.popover .popover-inner {
+    background: #f9f9f9;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px rgba(black, .1);
+    border: 1px solid #969696;
+  }
+  
+  .tooltip.popover .popover-arrow {
+    border-color: #969696;
+  }
+ .fa-star{
+    color: rgb(254, 200, 0);
+}
+.fa-twitter{
+    color: rgb(0, 170, 236);
+}
+.fa-facebook-official{
+    color: rgb(68, 96, 160);
+}
+.fa-google-plus{
+    color: rgb(250, 63, 45);
+}
+.dou{
+    color: rgb(48, 139, 29);
+}
+ul.popover{
+    margin: 0;
+}
+
+.popoverul li{
+    padding-bottom: 3px;
+    font-size: 14px;
+    
+    margin-top: 5px;
+}
+.popoverul li:hover {
+    background: #dcdcdc;
+    cursor: pointer;
+}
+.popoverul li span {
+    margin-left: 5px;
+}
+
